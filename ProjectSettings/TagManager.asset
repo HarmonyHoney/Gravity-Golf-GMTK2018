@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Spikes
+    uniqueID: 4199785821
+    locked: 0
+  - name: Floor
+    uniqueID: 553487603
+    locked: 0
+  - name: Player
+    uniqueID: 629241397
+    locked: 0
+  - name: Above
+    uniqueID: 844197781
+    locked: 0
+  - name: Fake UI
+    uniqueID: 88406569
+    locked: 0
