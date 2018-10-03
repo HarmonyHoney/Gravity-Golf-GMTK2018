@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1824318469972902}
+  m_IsPrefabAsset: 1
+--- !u!1 &1824318469972902
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4964076756827942}
+  - component: {fileID: 114646737994153182}
+  m_Layer: 0
+  m_Name: LevelDirectory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4964076756827942
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1824318469972902}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114646737994153182
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1824318469972902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 340c1b71f7d79f34f963dd4a5204559b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worldOne:
+  - {fileID: 102900000, guid: 3ca3b44f6f30b1641a7f93c23400793b, type: 3}
+  - {fileID: 102900000, guid: 47ed85d1e9d8440449a988dbd2d6605d, type: 3}
+  - {fileID: 102900000, guid: 414d75499ecbd0c4f844da82f9cf18b0, type: 3}
+  - {fileID: 102900000, guid: da332b8d82091cc42acfb8c51104b120, type: 3}
+  - {fileID: 102900000, guid: 7f5ab9939b4bacd47a7711019f6b5031, type: 3}
+  - {fileID: 102900000, guid: cb82518ab1e9999458e4f5d0dc2237cb, type: 3}
+  worldTwo:
+  - {fileID: 102900000, guid: 5874c7c15875af143813ba07dd8440be, type: 3}
+  - {fileID: 102900000, guid: 448b39bae31fb6b4f83a4e912b8db34a, type: 3}
+  - {fileID: 102900000, guid: a16a6082ac1d81e49a7ed331824ceca5, type: 3}
+  - {fileID: 102900000, guid: 9b5735c334d0cb646942a433585bfc5a, type: 3}
+  - {fileID: 102900000, guid: 3b87ba7e54faeb94681bdbe950807d18, type: 3}
+  - {fileID: 102900000, guid: 94dd5701744a7bc4abe98d16c4ee4c88, type: 3}
+  worldThree:
+  - {fileID: 102900000, guid: 52917b001ce25a1489fe0c725d0ccd13, type: 3}

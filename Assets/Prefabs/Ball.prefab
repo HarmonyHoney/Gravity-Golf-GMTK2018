@@ -473,7 +473,7 @@ MonoBehaviour:
   jumpAudio: {fileID: 4981118236353702}
   loseAudio: {fileID: 4543879343478230}
   collideAudio: {fileID: 4577897195423148}
-  nextScene: Level2
+  nextScene: LVL-1-1
   canAct: 1
   strokes: 0
 --- !u!212 &212892840842265978
