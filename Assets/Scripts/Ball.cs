@@ -18,13 +18,14 @@ public class Ball : MonoBehaviour {
     private Score score;
     private Restart restart;
 
-    [SerializeField] private string nextScene;
+    //[SerializeField] private string nextScene;
 
     private Rigidbody2D rb2d;
 
     [HideInInspector] public bool canAct = true;
 
     [HideInInspector] public int strokes;
+
 
     
 
@@ -39,6 +40,7 @@ public class Ball : MonoBehaviour {
         collideAudioSource = collideAudio.GetComponent<AudioSource>();
 
         Instantiate(fadeDiamond, Camera.main.transform);
+
 
 	}
 	
@@ -102,14 +104,13 @@ public class Ball : MonoBehaviour {
         rb2d.gravityScale = Mathf.Abs(rb2d.gravityScale);
 
         Instantiate(holeComplete, canvas);                          //Instantiate finish transition
-        canvas.GetComponent<ChangeScene>().nextScene = nextScene;   //Attach nextScene variable
+        //canvas.GetComponent<ChangeScene>().nextScene = nextScene;   //Attach nextScene variable
 
 
         rb2d.velocity = new Vector2(Random.Range(5f, 7f) * Mathf.Sign(-rb2d.velocity.x), Random.Range(5f, 7f) * rb2d.gravityScale); //Bounce back in the air
 
         ScoreCard.TotalScore += strokes;
-        Debug.Log(ScoreCard.TotalScore);
-
+        Debug.Log("Score Card: " + ScoreCard.TotalScore);
 
     }
 }

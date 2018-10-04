@@ -45,7 +45,8 @@ public class Restart : MonoBehaviour {
         FindObjectOfType<Ball>().canAct = false;
 
         Transform fade = Instantiate(fadeDiamond, Camera.main.transform);   //Instantiate fade out
-        fade.GetComponent<FadeDiamond>().fadeIn = false;                    //Set fadeIn to false
+        fade.GetComponent<FadeDiamond>().restartScene = true;               //restartScene = true
+        fade.GetComponent<FadeDiamond>().fadeIn = false;                    //fadeIn = false
 
         score.GetComponent<ScoreFadeIn>().enabled = true;
         score.GetComponent<ScoreFadeIn>().FadeOut();

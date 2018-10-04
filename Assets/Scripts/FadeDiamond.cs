@@ -17,10 +17,18 @@ public class FadeDiamond : MonoBehaviour {
     private Vector3 startScale;
     private Vector3 targetScale;
 
+    [SerializeField] private LevelDirectory levelDirectory;
+
+    private ChangeScene changeScene;
+
+    [SerializeField] public bool restartScene;
+
 
     private void Start() {
 
         cameraMain = Camera.main;
+
+        changeScene = FindObjectOfType<ChangeScene>().GetComponent<ChangeScene>();
 
         if (fadeIn) {
 
@@ -51,7 +59,16 @@ public class FadeDiamond : MonoBehaviour {
                 Object.Destroy(gameObject);
             }
             else {
-                FindObjectOfType<ChangeScene>().GetComponent<ChangeScene>().LoadNextScene();
+
+                if (!restartScene) {
+
+                    levelDirectory.SetNextLevel();
+                }
+
+                changeScene.nextScene = levelDirectory.LevelToString(LevelTracker.CurrentWorld, LevelTracker.CurrentLevel);
+
+                changeScene.LoadNextScene();
+
             }
             
         }
