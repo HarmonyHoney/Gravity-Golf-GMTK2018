@@ -7,6 +7,7 @@ public class Ball : MonoBehaviour {
     [SerializeField] private Transform finishParticleSystem;
     [SerializeField] private Transform holeComplete;
     [SerializeField] private Transform fadeDiamond;
+    [SerializeField] private Transform swapFX;
 
     [SerializeField] private Transform jumpAudio;
     [SerializeField] private Transform loseAudio;
@@ -22,6 +23,8 @@ public class Ball : MonoBehaviour {
 
     private Rigidbody2D rb2d;
 
+    private Animator anim;
+
     [HideInInspector] public bool canAct = true;
 
     [HideInInspector] public int strokes;
@@ -35,6 +38,7 @@ public class Ball : MonoBehaviour {
         canvas = FindObjectOfType<Canvas>().transform;
         score = FindObjectOfType<Score>();
         restart = FindObjectOfType<Restart>();
+        anim = GetComponent<Animator>();
 
 
         collideAudioSource = collideAudio.GetComponent<AudioSource>();
@@ -56,6 +60,9 @@ public class Ball : MonoBehaviour {
             score.UpdateScore(strokes);
 
             jumpAudio.GetComponent<AudioSource>().Play();
+
+            Instantiate(swapFX, transform.position, Quaternion.Euler(Vector3.zero), null);
+            anim.SetTrigger("swap");
         }
 
 	}

@@ -7,11 +7,8 @@ public class Restart : MonoBehaviour {
     [SerializeField] private Transform fadeDiamond;
 
     private Transform score;
-    private ChangeScene changeScene;
 
     private void Start() {
-
-        changeScene = FindObjectOfType<ChangeScene>();
 
         score = FindObjectOfType<Score>().transform;
 
