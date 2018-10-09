@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FadeDiamond : MonoBehaviour {
 
@@ -60,12 +61,16 @@ public class FadeDiamond : MonoBehaviour {
             }
             else {
 
-                if (!restartScene) {
+                if (restartScene) {
+
+                    changeScene.nextScene = changeScene.ActiveSceneName();
+
+                }
+                else {
 
                     levelDirectory.SetNextLevel();
+                    changeScene.nextScene = levelDirectory.LevelToString(LevelTracker.CurrentWorld, LevelTracker.CurrentLevel);
                 }
-
-                changeScene.nextScene = levelDirectory.LevelToString(LevelTracker.CurrentWorld, LevelTracker.CurrentLevel);
 
                 changeScene.LoadNextScene();
 

@@ -127,7 +127,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4736295838586002, guid: 505ab38b7a13fd946b038bac105c509a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4736295838586002, guid: 505ab38b7a13fd946b038bac105c509a, type: 2}
       propertyPath: m_LocalPosition.y
@@ -161,12 +161,12 @@ Prefab:
         type: 2}
       propertyPath: wayPoint.Array.data[0]
       value: 
-      objectReference: {fileID: 798154477}
+      objectReference: {fileID: 1984982975}
     - target: {fileID: 114627892945395506, guid: 505ab38b7a13fd946b038bac105c509a,
         type: 2}
       propertyPath: wayPoint.Array.data[1]
       value: 
-      objectReference: {fileID: 1984982975}
+      objectReference: {fileID: 798154477}
     - target: {fileID: 114627892945395506, guid: 505ab38b7a13fd946b038bac105c509a,
         type: 2}
       propertyPath: waitTime
@@ -176,6 +176,11 @@ Prefab:
         type: 2}
       propertyPath: moveSpeed
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114627892945395506, guid: 505ab38b7a13fd946b038bac105c509a,
+        type: 2}
+      propertyPath: reverseOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 505ab38b7a13fd946b038bac105c509a, type: 2}

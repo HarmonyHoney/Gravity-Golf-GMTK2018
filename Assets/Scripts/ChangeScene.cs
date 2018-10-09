@@ -12,4 +12,9 @@ public class ChangeScene : MonoBehaviour {
         SceneManager.LoadScene(nextScene);
     }
 
+    public string ActiveSceneName() {
+
+        return SceneManager.GetActiveScene().name;
+    }
+
 }

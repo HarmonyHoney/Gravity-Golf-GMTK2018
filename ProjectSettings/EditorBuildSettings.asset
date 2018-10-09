@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/World 1 Vanilla/up and down.unity
     guid: 47ed85d1e9d8440449a988dbd2d6605d
   - enabled: 1
+    path: Assets/Scenes/World 1 Vanilla/two chambers.unity
+    guid: 6a01081c54bcbb94596111ca1d8c6867
+  - enabled: 1
     path: Assets/Scenes/World 2 Spikes/crystal cave.unity
     guid: 94dd5701744a7bc4abe98d16c4ee4c88
   - enabled: 1
