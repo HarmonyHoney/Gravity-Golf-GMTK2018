@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/World 1 Vanilla/up and down.unity
     guid: 47ed85d1e9d8440449a988dbd2d6605d
   - enabled: 1
+    path: Assets/Scenes/World 1 Vanilla/easy snake.unity
+    guid: a4f9b245fd940f445ba1791f6bf3e026
+  - enabled: 1
     path: Assets/Scenes/World 1 Vanilla/two chambers.unity
     guid: 6a01081c54bcbb94596111ca1d8c6867
   - enabled: 1
