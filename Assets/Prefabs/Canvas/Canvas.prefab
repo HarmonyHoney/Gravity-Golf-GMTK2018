@@ -135,6 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeDiamond: {fileID: 4591621892121480, guid: 100a645f44cc75d45bc9b9d95d4f2f72,
     type: 2}
+  clickRange: 33
 --- !u!114 &114243658430886842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -294,7 +295,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -50, y: -60}
+  m_AnchoredPosition: {x: -50, y: -55}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224780296376930582

@@ -5,10 +5,14 @@ using UnityEngine;
 public class Restart : MonoBehaviour {
 
     [SerializeField] private Transform fadeDiamond;
+    [SerializeField] private float clickRange;
 
     private Transform score;
+    private RectTransform rectTransform;
 
     private void Start() {
+
+        rectTransform = GetComponent<RectTransform>();
 
         score = FindObjectOfType<Score>().transform;
 
@@ -20,7 +24,7 @@ public class Restart : MonoBehaviour {
 
             Vector3 mousePos = Input.mousePosition;
 
-            if (mousePos.x > 1200 && mousePos.y > 630) {
+            if (Vector3.Distance(mousePos, rectTransform.position) < clickRange) {
 
                 RestartScene();
             }   
