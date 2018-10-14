@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/World 1 Vanilla/spiral.unity
+    guid: 18d8ca11e00df224daea041b9887e410
+  - enabled: 1
     path: Assets/Scenes/World 1 Vanilla/around and around.unity
     guid: cb82518ab1e9999458e4f5d0dc2237cb
   - enabled: 1

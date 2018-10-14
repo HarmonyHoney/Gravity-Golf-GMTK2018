@@ -13,9 +13,15 @@ public class ScoreFadeIn : MonoBehaviour {
     [SerializeField] private Vector3 startPosition;
     [SerializeField] private Vector3 targetPosition;
 
+    [SerializeField] private RectTransform restartTransform;
+
+    private float offsetY;
+
     private void Start() {
 
         rectTransform = GetComponent<RectTransform>();
+
+        offsetY = rectTransform.anchoredPosition3D.y - restartTransform.anchoredPosition3D.y;
 
     }
 
@@ -24,6 +30,8 @@ public class ScoreFadeIn : MonoBehaviour {
         totalTime += Time.deltaTime;
 
         rectTransform.anchoredPosition3D = Vector3.Lerp(startPosition, targetPosition, totalTime / fadeTime);
+
+        restartTransform.anchoredPosition3D = new Vector3(restartTransform.anchoredPosition3D.x, rectTransform.anchoredPosition3D.y - offsetY, restartTransform.anchoredPosition3D.z);
 
 
         if (rectTransform.anchoredPosition3D == targetPosition) {
