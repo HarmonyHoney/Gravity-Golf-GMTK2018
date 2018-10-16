@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/World 1 Vanilla/lil submarine.unity
     guid: e037e23c71670024ea7d33de87bd7b8a
   - enabled: 1
+    path: Assets/Scenes/World 1 Vanilla/cowboy s.unity
+    guid: aa78e69d9b2739d489f66d0813242a6d
+  - enabled: 1
+    path: Assets/Scenes/World 1 Vanilla/banana.unity
+    guid: f10ede35f9e4d7f4e9ba98a6f062d6a3
+  - enabled: 1
     path: Assets/Scenes/World 1 Vanilla/around and around.unity
     guid: cb82518ab1e9999458e4f5d0dc2237cb
   - enabled: 1
