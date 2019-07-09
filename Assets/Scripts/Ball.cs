@@ -13,6 +13,8 @@ public class Ball : MonoBehaviour {
     [SerializeField] private Transform loseAudio;
     [SerializeField] private Transform collideAudio;
 
+    [SerializeField] private float collideMinimumPitch;
+
     private AudioSource collideAudioSource;
 
     private Transform canvas;
@@ -92,7 +94,7 @@ public class Ball : MonoBehaviour {
 
         collideAudioSource.pitch = (Mathf.Abs(rb2d.velocity.x) + Mathf.Abs(rb2d.velocity.y)) / 10f;
 
-        if (collideAudioSource.pitch > 0.5f) {
+        if (collideAudioSource.pitch > collideMinimumPitch) {
             collideAudioSource.Play();
         }
         
