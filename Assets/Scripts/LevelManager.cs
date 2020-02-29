@@ -56,7 +56,7 @@ public class LevelManager : MonoBehaviour
 
     public void Load()
     {
-        SceneManager.LoadScene(worldOne[currentLevel].name);
+        SceneManager.LoadScene(currentLevel + 1);
     }
 
 
