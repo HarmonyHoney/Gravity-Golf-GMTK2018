@@ -51,12 +51,12 @@ public class LevelManager : MonoBehaviour
     {
         currentLevel++;
 
-        if (currentLevel > worldIndex[currentWorld].levelIndex.Count)
+        if (currentLevel > worldIndex[currentWorld].levelIndex.Count - 1)
         {
             currentLevel = 0;
             currentWorld++;
         }
-        if (currentWorld > worldIndex.Count)
+        if (currentWorld > worldIndex.Count - 1)
         {
             currentWorld = 0;
         }
