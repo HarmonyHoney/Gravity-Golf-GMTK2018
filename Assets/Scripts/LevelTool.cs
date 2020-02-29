@@ -5,10 +5,16 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class LevelTool : MonoBehaviour
 {
-	LevelManager lm;
+	[System.Serializable]
+	public struct World
+	{
+		public string name;
+		public List<Object> levelIndex;
+	}
 
+	LevelManager lm;
 	public bool isAct = false;
-	public Object[] worldOne;
+	public List<World> worldIndex;
 
 	// Use this for initialization
 	void Start ()
@@ -22,15 +28,18 @@ public class LevelTool : MonoBehaviour
 		if (isAct)
 		{
 			isAct = false;
-
 			lm.worldIndex.Clear();
 
-			lm.worldIndex.Add(new LevelManager.World("World 1"));
-			foreach (Object o in worldOne)
+			int i = 0;
+			foreach(World w in worldIndex)
 			{
-				lm.worldIndex[0].levelIndex.Add(o.name);
+				lm.worldIndex.Add(new LevelManager.World(w.name));
+				foreach(Object o in w.levelIndex)
+				{
+					lm.worldIndex[i].levelIndex.Add(o.name);
+				}
+				i++;
 			}
-
 		}
 	}
 }

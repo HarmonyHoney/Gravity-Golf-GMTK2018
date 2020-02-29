@@ -60,11 +60,14 @@ public class FadeDiamond : MonoBehaviour
             }
             else
             {
-                if (!restartScene)
+                if (restartScene)
                 {
-                    FindObjectOfType<LevelManager>().currentLevel++;
+                    FindObjectOfType<LevelManager>().Reset();
                 }
-                FindObjectOfType<LevelManager>().Load();
+                else
+                {
+                    FindObjectOfType<LevelManager>().Next();
+                }
             }
             
         }

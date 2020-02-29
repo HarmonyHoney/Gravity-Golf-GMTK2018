@@ -5,10 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    public int currentWorld = 0;
-    public int currentLevel = 0;
-    public bool isChange = false;
-
     [System.Serializable]
     public struct World
     {
@@ -20,6 +16,10 @@ public class LevelManager : MonoBehaviour
             name = _name;
         }
     }
+
+    public int currentWorld = 0;
+    public int currentLevel = 0;
+    public bool isChange = false;
 
     public List<World> worldIndex;
 
@@ -41,6 +41,27 @@ public class LevelManager : MonoBehaviour
     public void Load()
     {
         SceneManager.LoadScene(worldIndex[currentWorld].levelIndex[currentLevel]);
+    }
+
+    public void Reset()
+    {
+        Load();
+    }
+    public void Next()
+    {
+        currentLevel++;
+
+        if (currentLevel > worldIndex[currentWorld].levelIndex.Count)
+        {
+            currentLevel = 0;
+            currentWorld++;
+        }
+        if (currentWorld > worldIndex.Count)
+        {
+            currentWorld = 0;
+        }
+
+        Load();
     }
 
 }
