@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class FadeDiamond : MonoBehaviour {
+public class FadeDiamond : MonoBehaviour
+{
 
     public bool fadeIn;
 
@@ -18,18 +19,15 @@ public class FadeDiamond : MonoBehaviour {
     private Vector3 startScale;
     private Vector3 targetScale;
 
-    [SerializeField] private LevelDirectory levelDirectory;
-
-    private ChangeScene changeScene;
+    [SerializeField] private LevelManager levelDirectory;
 
     [SerializeField] public bool restartScene;
 
 
-    private void Start() {
+    private void Start()
+    {
 
         cameraMain = Camera.main;
-
-        changeScene = FindObjectOfType<ChangeScene>().GetComponent<ChangeScene>();
 
         if (fadeIn) {
 
@@ -47,33 +45,28 @@ public class FadeDiamond : MonoBehaviour {
 
     }
 
-    private void Update() {
+    private void Update()
+    {
 
         totalTime += Time.deltaTime;
 
         transform.localScale = Vector3.Lerp(startScale, targetScale, totalTime / fadeTime);
 
 
-        if (transform.localScale == targetScale) {
+        if (transform.localScale == targetScale)
+        {
 
-            if (fadeIn) {
-                Object.Destroy(gameObject);
+            if (fadeIn)
+            {
+                Destroy(gameObject);
             }
-            else {
-
-                if (restartScene) {
-
-                    changeScene.nextScene = changeScene.ActiveSceneName();
-
+            else
+            {
+                if (!restartScene)
+                {
+                    FindObjectOfType<LevelManager>().currentLevel++;
                 }
-                else {
-
-                    levelDirectory.SetNextLevel();
-                    changeScene.nextScene = levelDirectory.LevelToString(LevelTracker.CurrentWorld, LevelTracker.CurrentLevel);
-                }
-
-                changeScene.LoadNextScene();
-
+                FindObjectOfType<LevelManager>().Load();
             }
             
         }

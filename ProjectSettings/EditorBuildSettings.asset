@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/firstScene.unity
+    guid: 06ca7f8fc1587b94288ca15f602586c6
+  - enabled: 1
+    path: Assets/Scenes/World 1 Vanilla/hole in one.unity
+    guid: 3ca3b44f6f30b1641a7f93c23400793b
+  - enabled: 1
     path: Assets/Scenes/World 1 Vanilla/super s.unity
     guid: 521000b29f46af84ea9d91807d387850
   - enabled: 1
@@ -29,9 +35,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/World 1 Vanilla/chainsaw.unity
     guid: da332b8d82091cc42acfb8c51104b120
-  - enabled: 1
-    path: Assets/Scenes/World 1 Vanilla/hole in one.unity
-    guid: 3ca3b44f6f30b1641a7f93c23400793b
   - enabled: 1
     path: Assets/Scenes/World 1 Vanilla/obstacle.unity
     guid: 414d75499ecbd0c4f844da82f9cf18b0
