@@ -9,69 +9,69 @@ EditorBuildSettings:
     path: Assets/Scenes/firstScene.unity
     guid: 06ca7f8fc1587b94288ca15f602586c6
   - enabled: 1
-    path: Assets/Scenes/World 1 Vanilla/hole in one.unity
-    guid: 3ca3b44f6f30b1641a7f93c23400793b
-  - enabled: 1
-    path: Assets/Scenes/World 1 Vanilla/super s.unity
-    guid: 521000b29f46af84ea9d91807d387850
-  - enabled: 1
-    path: Assets/Scenes/World 1 Vanilla/spiral.unity
-    guid: 18d8ca11e00df224daea041b9887e410
-  - enabled: 1
-    path: Assets/Scenes/World 1 Vanilla/lil submarine.unity
-    guid: e037e23c71670024ea7d33de87bd7b8a
-  - enabled: 1
-    path: Assets/Scenes/World 1 Vanilla/cowboy s.unity
-    guid: aa78e69d9b2739d489f66d0813242a6d
-  - enabled: 1
-    path: Assets/Scenes/World 1 Vanilla/banana.unity
-    guid: f10ede35f9e4d7f4e9ba98a6f062d6a3
-  - enabled: 1
-    path: Assets/Scenes/World 1 Vanilla/around and around.unity
+    path: Assets/Scenes/World 1 Vanilla/W1 around and around.unity
     guid: cb82518ab1e9999458e4f5d0dc2237cb
   - enabled: 1
-    path: Assets/Scenes/World 1 Vanilla/bat cave.unity
+    path: Assets/Scenes/World 1 Vanilla/W1 banana.unity
+    guid: f10ede35f9e4d7f4e9ba98a6f062d6a3
+  - enabled: 1
+    path: Assets/Scenes/World 1 Vanilla/W1 bat cave.unity
     guid: 7f5ab9939b4bacd47a7711019f6b5031
   - enabled: 1
-    path: Assets/Scenes/World 1 Vanilla/chainsaw.unity
+    path: Assets/Scenes/World 1 Vanilla/W1 chainsaw.unity
     guid: da332b8d82091cc42acfb8c51104b120
   - enabled: 1
-    path: Assets/Scenes/World 1 Vanilla/obstacle.unity
-    guid: 414d75499ecbd0c4f844da82f9cf18b0
+    path: Assets/Scenes/World 1 Vanilla/W1 cowboy s.unity
+    guid: aa78e69d9b2739d489f66d0813242a6d
   - enabled: 1
-    path: Assets/Scenes/World 1 Vanilla/up and down.unity
-    guid: 47ed85d1e9d8440449a988dbd2d6605d
-  - enabled: 1
-    path: Assets/Scenes/World 1 Vanilla/easy snake.unity
+    path: Assets/Scenes/World 1 Vanilla/W1 ez snake.unity
     guid: a4f9b245fd940f445ba1791f6bf3e026
   - enabled: 1
-    path: Assets/Scenes/World 1 Vanilla/two chambers.unity
-    guid: 6a01081c54bcbb94596111ca1d8c6867
-  - enabled: 1
-    path: Assets/Scenes/World 1 Vanilla/fishy.unity
+    path: Assets/Scenes/World 1 Vanilla/W1 fishy.unity
     guid: 3eef5d44b37ee6344ae8e54155ec4e2b
   - enabled: 1
-    path: Assets/Scenes/World 2 Spikes/crystal cave.unity
+    path: Assets/Scenes/World 1 Vanilla/W1 hole in one.unity
+    guid: 3ca3b44f6f30b1641a7f93c23400793b
+  - enabled: 1
+    path: Assets/Scenes/World 1 Vanilla/W1 lil submarine.unity
+    guid: e037e23c71670024ea7d33de87bd7b8a
+  - enabled: 1
+    path: Assets/Scenes/World 1 Vanilla/W1 obstacle.unity
+    guid: 414d75499ecbd0c4f844da82f9cf18b0
+  - enabled: 1
+    path: Assets/Scenes/World 1 Vanilla/W1 spiral.unity
+    guid: 18d8ca11e00df224daea041b9887e410
+  - enabled: 1
+    path: Assets/Scenes/World 1 Vanilla/W1 super s.unity
+    guid: 521000b29f46af84ea9d91807d387850
+  - enabled: 1
+    path: Assets/Scenes/World 1 Vanilla/W1 two chambers.unity
+    guid: 6a01081c54bcbb94596111ca1d8c6867
+  - enabled: 1
+    path: Assets/Scenes/World 1 Vanilla/W1 up and down.unity
+    guid: 47ed85d1e9d8440449a988dbd2d6605d
+  - enabled: 1
+    path: Assets/Scenes/World 2 Spikes/W2 crystal cave.unity
     guid: 94dd5701744a7bc4abe98d16c4ee4c88
   - enabled: 1
-    path: Assets/Scenes/World 2 Spikes/patience.unity
-    guid: 3b87ba7e54faeb94681bdbe950807d18
-  - enabled: 1
-    path: Assets/Scenes/World 2 Spikes/spike strip.unity
-    guid: 5874c7c15875af143813ba07dd8440be
-  - enabled: 1
-    path: Assets/Scenes/World 2 Spikes/spiky chainsaw.unity
-    guid: 9b5735c334d0cb646942a433585bfc5a
-  - enabled: 1
-    path: Assets/Scenes/World 2 Spikes/the gorge.unity
+    path: Assets/Scenes/World 2 Spikes/W2 gorge.unity
     guid: 448b39bae31fb6b4f83a4e912b8db34a
   - enabled: 1
-    path: Assets/Scenes/World 2 Spikes/thread the needle.unity
-    guid: a16a6082ac1d81e49a7ed331824ceca5
+    path: Assets/Scenes/World 2 Spikes/W2 patience.unity
+    guid: 3b87ba7e54faeb94681bdbe950807d18
   - enabled: 1
-    path: Assets/Scenes/World 2 Spikes/strip x2.unity
+    path: Assets/Scenes/World 2 Spikes/W2 spike strip.unity
+    guid: 5874c7c15875af143813ba07dd8440be
+  - enabled: 1
+    path: Assets/Scenes/World 2 Spikes/W2 spiky chainsaw.unity
+    guid: 9b5735c334d0cb646942a433585bfc5a
+  - enabled: 1
+    path: Assets/Scenes/World 2 Spikes/W2 strip x2.unity
     guid: 0879465e7d11e4c4ebef2f427ee6adc2
   - enabled: 1
-    path: Assets/Scenes/World 3 Moving Floor/gorge tram.unity
+    path: Assets/Scenes/World 2 Spikes/W2 thread the needle.unity
+    guid: a16a6082ac1d81e49a7ed331824ceca5
+  - enabled: 1
+    path: Assets/Scenes/World 3 Moving Floor/W3 gorge tram.unity
     guid: 52917b001ce25a1489fe0c725d0ccd13
   m_configObjects: {}
