@@ -9,40 +9,24 @@ public class LevelManager : MonoBehaviour
     public int currentLevel = 0;
     public bool isChange = false;
 
+    [System.Serializable]
+    public struct World
+    {
+        public string name;
+        public List<string> levelIndex;
+        public World(string _name)
+        {
+            levelIndex = new List<string>();
+            name = _name;
+        }
+    }
 
-    
-    public Object[] worldOne;
-    public Object[] worldTwo;
-    public Object[] worldThree;
+    public List<World> worldIndex;
 
 
     public void Awake()
     {
         DontDestroyOnLoad(gameObject);
-    }
-
-    public Object[] WorldArray(int world)
-    {
-
-        Object[] worldArray;
-
-        switch (world) {
-
-            default:
-                worldArray = worldOne;
-                break;
-
-            case 1:
-                worldArray = worldTwo;
-                break;
-
-            case 2:
-                worldArray = worldThree;
-                break;
-
-        }
-
-        return worldArray;
     }
 
     public void Update()
@@ -56,18 +40,7 @@ public class LevelManager : MonoBehaviour
 
     public void Load()
     {
-        SceneManager.LoadScene(currentLevel + 1);
-    }
-
-
-
-    public string LevelToString (int world, int level)
-    {
-
-        Object[] worldArray = WorldArray(world);
-
-        return worldArray[level].name;
-
+        SceneManager.LoadScene(worldIndex[currentWorld].levelIndex[currentLevel]);
     }
 
 }

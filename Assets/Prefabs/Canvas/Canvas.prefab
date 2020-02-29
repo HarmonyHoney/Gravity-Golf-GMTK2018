@@ -19,7 +19,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224957959036714000}
-  - component: {fileID: 114068864666095034}
   - component: {fileID: 223415520036157240}
   - component: {fileID: 114427940985712594}
   - component: {fileID: 114348702130958300}
@@ -83,18 +82,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0.8627451, g: 0.3254902, b: 0.29411766, a: 1}
   m_EffectDistance: {x: 6, y: 4}
   m_UseGraphicAlpha: 1
---- !u!114 &114068864666095034
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1288565529171714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df310e5776a06ba408754ebd4ba50dbb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextScene: 
 --- !u!114 &114228198342028194
 MonoBehaviour:
   m_ObjectHideFlags: 1

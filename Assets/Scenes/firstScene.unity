@@ -215,37 +215,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 2010475896}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 340c1b71f7d79f34f963dd4a5204559b, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d2572ac8b7163140a7b331300f5b2cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentWorld: 0
-  currentLevel: 0
-  isChange: 1
+  isAct: 0
   worldOne:
-  - {fileID: 102900000, guid: 3ca3b44f6f30b1641a7f93c23400793b, type: 3}
-  - {fileID: 102900000, guid: 521000b29f46af84ea9d91807d387850, type: 3}
+  - {fileID: 102900000, guid: cb82518ab1e9999458e4f5d0dc2237cb, type: 3}
   - {fileID: 102900000, guid: f10ede35f9e4d7f4e9ba98a6f062d6a3, type: 3}
-  - {fileID: 102900000, guid: 47ed85d1e9d8440449a988dbd2d6605d, type: 3}
+  - {fileID: 102900000, guid: 7f5ab9939b4bacd47a7711019f6b5031, type: 3}
+  - {fileID: 102900000, guid: da332b8d82091cc42acfb8c51104b120, type: 3}
+  - {fileID: 102900000, guid: aa78e69d9b2739d489f66d0813242a6d, type: 3}
+  - {fileID: 102900000, guid: a4f9b245fd940f445ba1791f6bf3e026, type: 3}
+  - {fileID: 102900000, guid: 3eef5d44b37ee6344ae8e54155ec4e2b, type: 3}
+  - {fileID: 102900000, guid: 3ca3b44f6f30b1641a7f93c23400793b, type: 3}
+  - {fileID: 102900000, guid: e037e23c71670024ea7d33de87bd7b8a, type: 3}
   - {fileID: 102900000, guid: 414d75499ecbd0c4f844da82f9cf18b0, type: 3}
   - {fileID: 102900000, guid: 18d8ca11e00df224daea041b9887e410, type: 3}
-  - {fileID: 102900000, guid: a4f9b245fd940f445ba1791f6bf3e026, type: 3}
-  - {fileID: 102900000, guid: aa78e69d9b2739d489f66d0813242a6d, type: 3}
-  - {fileID: 102900000, guid: da332b8d82091cc42acfb8c51104b120, type: 3}
-  - {fileID: 102900000, guid: 7f5ab9939b4bacd47a7711019f6b5031, type: 3}
+  - {fileID: 102900000, guid: 521000b29f46af84ea9d91807d387850, type: 3}
   - {fileID: 102900000, guid: 6a01081c54bcbb94596111ca1d8c6867, type: 3}
-  - {fileID: 102900000, guid: 3eef5d44b37ee6344ae8e54155ec4e2b, type: 3}
-  - {fileID: 102900000, guid: cb82518ab1e9999458e4f5d0dc2237cb, type: 3}
-  - {fileID: 102900000, guid: e037e23c71670024ea7d33de87bd7b8a, type: 3}
-  worldTwo:
-  - {fileID: 102900000, guid: 5874c7c15875af143813ba07dd8440be, type: 3}
-  - {fileID: 102900000, guid: 448b39bae31fb6b4f83a4e912b8db34a, type: 3}
-  - {fileID: 102900000, guid: 0879465e7d11e4c4ebef2f427ee6adc2, type: 3}
-  - {fileID: 102900000, guid: a16a6082ac1d81e49a7ed331824ceca5, type: 3}
-  - {fileID: 102900000, guid: 9b5735c334d0cb646942a433585bfc5a, type: 3}
-  - {fileID: 102900000, guid: 3b87ba7e54faeb94681bdbe950807d18, type: 3}
-  - {fileID: 102900000, guid: 94dd5701744a7bc4abe98d16c4ee4c88, type: 3}
-  worldThree:
-  - {fileID: 102900000, guid: 52917b001ce25a1489fe0c725d0ccd13, type: 3}
+  - {fileID: 102900000, guid: 47ed85d1e9d8440449a988dbd2d6605d, type: 3}
 --- !u!4 &2010475898
 Transform:
   m_ObjectHideFlags: 0
@@ -273,20 +261,20 @@ MonoBehaviour:
   currentWorld: 0
   currentLevel: 0
   isChange: 1
-  worldOne:
-  - {fileID: 102900000, guid: cb82518ab1e9999458e4f5d0dc2237cb, type: 3}
-  - {fileID: 102900000, guid: f10ede35f9e4d7f4e9ba98a6f062d6a3, type: 3}
-  - {fileID: 102900000, guid: 7f5ab9939b4bacd47a7711019f6b5031, type: 3}
-  - {fileID: 102900000, guid: da332b8d82091cc42acfb8c51104b120, type: 3}
-  - {fileID: 102900000, guid: aa78e69d9b2739d489f66d0813242a6d, type: 3}
-  - {fileID: 102900000, guid: a4f9b245fd940f445ba1791f6bf3e026, type: 3}
-  - {fileID: 102900000, guid: 3eef5d44b37ee6344ae8e54155ec4e2b, type: 3}
-  - {fileID: 102900000, guid: 3ca3b44f6f30b1641a7f93c23400793b, type: 3}
-  - {fileID: 102900000, guid: e037e23c71670024ea7d33de87bd7b8a, type: 3}
-  - {fileID: 102900000, guid: 414d75499ecbd0c4f844da82f9cf18b0, type: 3}
-  - {fileID: 102900000, guid: 18d8ca11e00df224daea041b9887e410, type: 3}
-  - {fileID: 102900000, guid: 521000b29f46af84ea9d91807d387850, type: 3}
-  - {fileID: 102900000, guid: 6a01081c54bcbb94596111ca1d8c6867, type: 3}
-  - {fileID: 102900000, guid: 47ed85d1e9d8440449a988dbd2d6605d, type: 3}
-  worldTwo: []
-  worldThree: []
+  worldIndex:
+  - name: World 1
+    levelIndex:
+    - W1 around and around
+    - W1 banana
+    - W1 bat cave
+    - W1 chainsaw
+    - W1 cowboy s
+    - W1 easy snake
+    - W1 fishy
+    - W1 hole in one
+    - W1 lil submarine
+    - W1 obstacle
+    - W1 spiral
+    - W1 super s
+    - W1 two chambers
+    - W1 up and down

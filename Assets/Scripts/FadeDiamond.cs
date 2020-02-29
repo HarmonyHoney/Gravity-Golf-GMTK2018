@@ -19,8 +19,6 @@ public class FadeDiamond : MonoBehaviour
     private Vector3 startScale;
     private Vector3 targetScale;
 
-    [SerializeField] private LevelManager levelDirectory;
-
     [SerializeField] public bool restartScene;
 
 
